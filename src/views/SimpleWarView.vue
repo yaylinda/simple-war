@@ -515,14 +515,6 @@
 
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
-import {
-  Game,
-  LogRegForm,
-  User,
-  GameConfiguration,
-  Player,
-  FriendRequest
-} from "@/models/simple-war";
 import { ErrorMessages, ToastType } from "@/utils/constants";
 import GameBoardComponent from "@/components/GameBoardComponent.vue";
 import GamesListComponent from "@/components/GamesListComponent.vue";
@@ -535,6 +527,7 @@ import * as Stomp from "stompjs";
 import SockJS from "sockjs-client";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
+import { FriendRequest, Player, Game, GameConfiguration, LogRegForm, User } from '@/models/simple-war';
 
 Vue.use(Toast);
 
