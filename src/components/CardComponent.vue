@@ -88,7 +88,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
-import { Card } from "../models/simple-war";
+import Card from "@/models/card";
 
 @Component({
   components: {}

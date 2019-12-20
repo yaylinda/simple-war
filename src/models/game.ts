@@ -1,7 +1,7 @@
-import Cell from './cell';
-import Card from './card';
-import GameStats from './game-stats';
-import GameConfiguration from './game-configuration';
+import Cell from "./cell";
+import Card from "./card";
+import GameStats from "./game-stats";
+import GameConfiguration from "./game-configuration";
 
 export default class Game {
   public id!: string;

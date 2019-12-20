@@ -527,7 +527,12 @@ import * as Stomp from "stompjs";
 import SockJS from "sockjs-client";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
-import { FriendRequest, Player, Game, GameConfiguration, LogRegForm, User } from '@/models/simple-war';
+import GameConfiguration from "@/models/game-configuration";
+import LogRegForm from "@/models/login-registration-form";
+import User from "@/models/user";
+import Game from "@/models/game";
+import Player from "@/models/player";
+import FriendRequest from "@/models/friend-request";
 
 Vue.use(Toast);
 

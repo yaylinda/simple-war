@@ -110,8 +110,8 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
-import { FriendRequest } from "../models/simple-war";
 import { getAgoTime } from "../utils/utilities";
+import FriendRequest from "@/models/friend-request";
 
 @Component({
   components: {}

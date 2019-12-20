@@ -170,9 +170,10 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
-import { Game, Card } from "../models/simple-war";
 import CardComponent from "@/components/CardComponent.vue";
 import { getAgoTime } from "../utils/utilities";
+import Game from "@/models/game";
+import Card from "@/models/card";
 
 @Component({
   components: {
@@ -214,7 +215,7 @@ export default class GameBoardComponent extends Vue {
     // console.log(
     // `[GameBoardComponent] got event 'cardClickedEvent' for handIndex=${handIndex}`,
     // );
-    this.game.cards.forEach(c => {
+    this.game.cards.forEach((c: Card) => {
       c.clicked = false;
     });
     this.game.cards[handIndex].clicked = true;
@@ -272,7 +273,7 @@ export default class GameBoardComponent extends Vue {
             this.$emit("showError", error);
           }
         );
-      this.game.cards.forEach(c => {
+      this.game.cards.forEach((c: Card) => {
         c.might += 1;
         c.might -= 1;
         c.clicked = false;

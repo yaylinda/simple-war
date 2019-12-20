@@ -112,8 +112,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { Game } from "../models/simple-war";
 import { getAgoTime } from "../utils/utilities";
+import Game from "@/models/game";
 
 @Component({
   components: {}
