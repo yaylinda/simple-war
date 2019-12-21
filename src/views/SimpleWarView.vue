@@ -1,5 +1,6 @@
 <template>
   <div class="simple-war-view">
+    
     <h1>Simple War (BETA)</h1>
 
     <md-toolbar>
