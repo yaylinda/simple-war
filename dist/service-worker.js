@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.2968c0528634e82db1346c7e7d515436.js"
+  "/precache-manifest.29fdc3b3683fbbd9f31f70aa5e1fca2a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "simple-war"});
